@@ -1,0 +1,26 @@
+{
+  "name": "ts-reactx",
+  "description": "ReactX in TypeScript",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shan-96/ts-reactx"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.14",
+    "babel-jest": "^26.6.3",
+    "core-js": "^3.8.1",
+    "jest": "^26.6.3",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "test": "jest --no-cache"
+  }
+}
