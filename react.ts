@@ -284,4 +284,25 @@ function createComputed<T>(
   return makeReadFn(derived);
 }
 
-export { createInput, createCallback, createComputed };
+export default class Cell<T> {
+  private initialValue: T;
+  readonly readFn: ReadFn<T>;
+  readonly writeFn: WriteFn<T>;
+
+  constructor(value: T) {
+    this.initialValue = value;
+    [this.readFn, this.writeFn] = createInput(value);
+  }
+
+  getComputedCellFn<T>(
+    fn: UpdateFn<T>,
+    _value?: T,
+    equal?: boolean | EqualFn<T>
+  ): ReadFn<T> {
+    return createComputed(fn, _value, equal);
+  }
+
+  getCallbackCellFn(fn: CallbackFn): UnsubscribeFn {
+    return createCallback(fn);
+  }
+}
