@@ -1,7 +1,6 @@
 {
   "name": "ts-reactx",
   "description": "ReactX in TypeScript",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/shan-96/ts-reactx"
