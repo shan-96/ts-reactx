@@ -13,3 +13,6 @@ In addition, compute cells allow for registering change notification callbacks. 
 - [How it Works](https://indepth.dev/posts/1269/finding-fine-grained-reactive-programming#how-it-works)
 - [A blog on fine grained reactive programming](https://levelup.gitconnected.com/finding-fine-grained-reactive-programming-89741994ddee)
 - [Computations](https://github.com/ryansolid/solid/blob/master/documentation/reactivity.md#user-content-computations)
+
+## Disclaimer
+- I got this idea by solving one of puzzles on https://exercism.io/my/tracks/typescript
