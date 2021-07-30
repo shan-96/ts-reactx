@@ -16,3 +16,11 @@ In addition, compute cells allow for registering change notification callbacks. 
 
 ## Disclaimer
 - I got this idea by solving one of puzzles on https://exercism.io/my/tracks/typescript
+
+## Usage
+```ts
+let cell: Cell<number> = new Cell(1); // set a cell with value 1
+const output = cell.getComputedCellFn(() => cell.readFn() + 1); // add a compute function
+let result = output(); // result = 2
+```
+More examples in [tests](https://github.com/shan-96/ts-reactx/blob/main/react.test.ts)

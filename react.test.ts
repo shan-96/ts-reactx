@@ -17,7 +17,7 @@ describe('React module', () => {
   it('compute cells calculate initial value', () => {
     let cell: Cell<number> = new Cell(1);
     const output = cell.getComputedCellFn(() => cell.readFn() + 1);
-    expect(output()).toEqual(2)
+    expect(output()).toEqual(2);
   })
 
   it('compute cell takes inputs in correct order', () => {
