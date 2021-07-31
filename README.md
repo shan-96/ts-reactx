@@ -19,6 +19,8 @@ In addition, compute cells allow for registering change notification callbacks. 
 
 ## Usage
 ```ts
+import Cell from './react'
+
 let cell: Cell<number> = new Cell(1); // set a cell with value 1
 const output = cell.getComputedCellFn(() => cell.readFn() + 1); // add a compute function
 let result = output(); // result = 2
