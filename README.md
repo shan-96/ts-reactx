@@ -1,4 +1,4 @@
-# ts-reactx ![CI Status](https://github.com/shan-96/ts-reactx/actions/workflows/node.js.yml/badge.svg)
+# ts-reactx ![CI Status](https://github.com/shan-96/ts-reactx/actions/workflows/node.js.yml/badge.svg) ![npm version](https://badge.fury.io/js/ts-reactx.svg) ![Package Pipeline](https://github.com/shan-96/ts-reactx/actions/workflows/npm-publish.yml/badge.svg)
 
 A basic reactive system in TypeScript.
 
