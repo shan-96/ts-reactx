@@ -1,4 +1,4 @@
-# ts-reactx
+# ts-reactx ![CI Status](https://github.com/shan-96/ts-reactx/actions/workflows/node.js.yml/badge.svg)
 
 A basic reactive system in TypeScript.
 
