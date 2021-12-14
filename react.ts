@@ -1,8 +1,31 @@
+/**
+ * A function stub for the accessor function (getter)
+ */
 type ReadFn<T> = () => T;
+
+/**
+ * A function stub for the mutator function (setter)
+ */
 type WriteFn<T> = (value: T) => void;
+
+/**
+ * A function stub provided as input to the callback closure
+ */
 type CallbackFn = () => void;
+
+/**
+ * A function stub provided as input to the computed closure
+ */
 type UpdateFn<T> = () => T;
+
+/**
+ * A function stub provided as input to the computed closure for checking equality
+ */
 type EqualFn<T> = (lhs: T, rhs: T) => boolean;
+
+/**
+ * A function stub returned as output of the callback closure
+ */
 type UnsubscribeFn = () => void;
 
 type InputPair<T> = [ReadFn<T>, WriteFn<T>];

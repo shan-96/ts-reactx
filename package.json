@@ -17,10 +17,12 @@
     "babel-jest": "^27.0.6",
     "core-js": "^3.16.0",
     "jest": "^27.0.6",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "typedoc": "^0.22.10"
   },
   "scripts": {
-    "test": "jest --no-cache"
+    "test": "jest --no-cache",
+    "doc": "npx typedoc react.ts"
   },
   "bugs": {
     "url": "https://github.com/shan-96/ts-reactx/issues"
