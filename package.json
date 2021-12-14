@@ -21,7 +21,7 @@
     "typedoc": "^0.22.10"
   },
   "scripts": {
-    "test": "jest --no-cache",
+    "test": "npx jest --no-cache",
     "doc": "npx typedoc react.ts"
   },
   "bugs": {
