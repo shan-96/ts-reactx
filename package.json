@@ -6,30 +6,23 @@
     "url": "git+https://github.com/shan-96/ts-reactx.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/plugin-proposal-class-properties": "^7.16.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.16.5",
-    "@babel/plugin-syntax-bigint": "^7.8.3",
-    "@babel/preset-env": "^7.16.5",
-    "@babel/preset-typescript": "^7.16.5",
-    "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
-    "babel-jest": "^27.4.5",
-    "core-js": "^3.19.3",
-    "jest": "^27.4.5",
     "typedoc": "^0.22.10",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+	  "@types/jest": "^26.0.24",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.1"
   },
   "scripts": {
     "test": "npx jest --no-cache",
-    "doc": "npx typedoc react.ts"
+    "doc": "npx typedoc ./src/react.ts"
   },
   "bugs": {
     "url": "https://github.com/shan-96/ts-reactx/issues"
   },
   "homepage": "https://github.com/shan-96/ts-reactx#readme",
   "version": "1.0.1",
-  "main": "react.ts",
+  "main": "./src/react.ts",
   "dependencies": {
     "abab": "^2.0.5",
     "acorn": "^8.4.1",

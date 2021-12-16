@@ -292,7 +292,7 @@ export default class Cell<T> {
   /**
    * [Private Member] initial cell value to create the cell object.
    */
-  private initialValue: T;
+  private readonly initialValue: T;
 
   /**
    * [Member] accessor (getter function) for the cell's value.
@@ -322,7 +322,7 @@ export default class Cell<T> {
    */
   constructor(value: T) {
     this.initialValue = value;
-    [this.readFn, this.writeFn] = createInput(value);
+    [this.readFn, this.writeFn] = createInput(this.initialValue);
   }
 
   /**

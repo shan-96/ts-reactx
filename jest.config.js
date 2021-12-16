@@ -1,19 +1,26 @@
+const pkgJason = require('./package.json')
+
 module.exports = {
+  preset: 'ts-jest',
+  globals: {
+    "ts-jest": {
+      tsconfig: "tsconfig.json"
+    }
+  },
+  transform: {
+    '^.+\\.ts$': 'ts-jest',
+  },
+  testRegex: '(/test/.*.(test|spec)).(js|ts)$',
+  moduleFileExtensions: ['ts', 'js'],
+  collectCoverage: true,
+  coveragePathIgnorePatterns: ['(test/.*.mock).(js|ts)$'],
   verbose: true,
   projects: ['<rootDir>'],
-  testMatch: [
-    '**/__tests__/**/*.[jt]s?(x)',
-    '**/test/**/*.[jt]s?(x)',
-    '**/?(*.)+(spec|test).[jt]s?(x)',
+  coverageDirectory: '<rootDir>/coverage/',
+  testEnvironment: "node",
+  setupFiles: [
+    './test/jest.setup.js',
   ],
-  testPathIgnorePatterns: [
-    '/(?:production_)?node_modules/',
-    '.d.ts$',
-    '<rootDir>/test/fixtures',
-    '<rootDir>/test/helpers',
-    '__mocks__',
-  ],
-  transform: {
-    '^.+\\.[jt]sx?$': 'babel-jest',
-  },
+  name: pkgJason.name,
+  displayName: pkgJason.name,
 }

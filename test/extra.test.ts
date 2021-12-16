@@ -1,4 +1,4 @@
-import Cell from './react'
+import Cell from '../src/react';
 
 describe('Some more tests', () => {
     it('Observable and Computeds can have different types', () => {

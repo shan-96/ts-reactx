@@ -1,4 +1,4 @@
-import Cell from './react'
+import Cell from '../src/react';
 
 describe('React module', () => {
   it('input cells have a value', () => {
@@ -109,6 +109,7 @@ describe('React module', () => {
     const values: string[] = []
     cell.getCallbackCellFn(() => {
       const _dontCare = output()
+      expect(_dontCare).toEqual(111)
       values.push('cell changed')
     });
     values.pop();
