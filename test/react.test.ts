@@ -108,8 +108,7 @@ describe('React module', () => {
     );
     const values: string[] = []
     cell.getCallbackCellFn(() => {
-      const _dontCare = output()
-      expect(_dontCare).toEqual(111)
+      output() // we dont care about the return value
       values.push('cell changed')
     });
     values.pop();
