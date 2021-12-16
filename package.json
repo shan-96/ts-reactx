@@ -21,7 +21,7 @@
     "url": "https://github.com/shan-96/ts-reactx/issues"
   },
   "homepage": "https://github.com/shan-96/ts-reactx#readme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./src/react.ts",
   "dependencies": {
     "abab": "^2.0.5",
